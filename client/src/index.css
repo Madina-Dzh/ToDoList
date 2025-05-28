@@ -1,0 +1,252 @@
+.site__wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.site__wrapper h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.AddTask__wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.AddTask__wrapper input {
+  height: 20px;
+  width: 400px;
+}
+
+.ToDoItem {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px dashed #000;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.header-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-buttons button {
+  margin-left: 10px;
+}
+
+.Reg-Auth {
+  position: fixed;
+  /* Фиксированное позиционирование */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  /* Центрируем по горизонтали */
+  align-items: center;
+  /* Центрируем по вертикали */
+  z-index: 1000;
+  /* Убедитесь, что он поверх остальных элементов */
+}
+
+.Reg-Auth__container {
+  background-color: white;
+  /* Белый фон для контейнера */
+  padding: 20px;
+  /* Отступы внутри контейнера */
+  border-radius: 8px;
+  /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Тень для эффекта поднятости */
+}
+
+.Reg-Auth__header {
+  font-size: 24px;
+  /* Размер шрифта заголовка */
+  margin-bottom: 20px;
+  /* Отступ снизу */
+  display: flex;
+  justify-content: center;
+}
+
+.Reg-Auth .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Reg-Auth button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.Reg-Auth button:hover {
+  background-color: #0056b3;
+}
+
+.Reg-Auth button:last-child {
+  background-color: #dc3545;
+}
+
+.Reg-Auth button:last-child:hover {
+  background-color: #c82333;
+}
+
+.Reg-Auth td {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.check-status {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.check-status.status-1 {
+  background-color: yellow;
+  color: black;
+}
+
+.check-status.status-2 {
+  background-color: green;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+/*Редактирование*/
+.ToDoEdit {
+  position: fixed;
+  left: 50%;
+  top: 80%;
+  background-color: white;
+  /* Белый фон для контейнера */
+  padding: 20px;
+  /* Отступы внутри контейнера */
+  border-radius: 8px;
+  /* Скругленные углы */
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Тень для эффекта поднятости */
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+}
+
+.ToDoEdit__header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.title-status {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  /*border: #000 solid;*/
+}
+
+.title-status input {
+  width: 620px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+
+.on-the-sides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rights {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rights select {
+  width: 50%;
+  text-align: right;
+  border: none;
+  outline: none;
+  margin: 8px 5px;
+}
+
+.ToDoEdit .del {
+  margin-top: 15px;
+  background-color: #dc3545;
+  padding: 5px;
+  width: 170px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.ToDoEdit .buttons {
+  margin-top: 25px;
+}
+
+.buttons button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.ToDoItem .rights {
+  color: rgb(69, 69, 69)
+}
+
+.changeTask {
+  height: 100%;
+}
+
+.changeTask button {
+  height: 100%;
+  width: 50px;
+  border: #000 solid 2px;
+  border-radius: 5px;
+  margin: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.edit-in-task {
+  background-color: yellow;
+}
+
+.delete-in-task {
+  background-color:#dc3545;
+}
