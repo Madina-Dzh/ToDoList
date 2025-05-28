@@ -7,6 +7,7 @@ const app = express()
 app.use(cors()) // для отсутствия ошибок при ajax-запросах
 app.use(bodyParser.json()) // сказали приложению использовать bodyParser
 
+//Подключение к БД
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
