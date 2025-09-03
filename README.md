@@ -28,12 +28,12 @@ ToDoList - это простое веб-приложение для управл
 5. Настройте подключение к базе данных (см. раздел “Настройка базы данных”).
 6. Запустите приложение: `npm run dev`
 
-`git clone https://github.com/Madina-Dzh/ToDoList.git
-cd ToDoList
-npm install
-cd client
-npm install
-cd ToDoList`
+`git clone https://github.com/Madina-Dzh/ToDoList.git`
+`cd ToDoList`
+`npm install`
+`cd client`
+`npm install`
+`cd ToDoList`
 
 `npm run dev`
 
